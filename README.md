@@ -6,4 +6,42 @@ Citation: Kline, Zachary and Jeremy Pais. 2021. "Social Stratification and Choic
 
 https://academic.oup.com/sf/article-abstract/99/3/947/5858251
 
-To create data set, download csv files for individual and family data directly from PSID data center. 
+To create data set, download csv files for individual and family data directly from PSID data center.
+
+_______________________________________________________
+
+A summary of do files are as follows:
+
+GRR-master : Master do file used to create data set and run all analyses. See for notes
+
+________________________________________________________________________
+
+These do files create the Stata environment used at the time this replication package was created
+
+GRR-profile : Sets prefered visual settings for Stata, credit Dr. Scott Long
+
+GRR-setup : Downloads and loads neccesary STATA packages using dated version of stata, credit Dr. Scott Long
+
+______________________________________________________________________
+
+These do files create the data set used in the analyses
+
+GRR-PSID_source : Imports and merges data from CSV files downloaded from PSID data center.
+
+GRR-PSID_ehistory: Cleans economic history variables
+
+GRR-PSID_hshock : Cleans health shock variables
+
+GRR-PSID_rplans : Cleans retirement plan data
+
+GRR-PSID_econ : Cleans other economic variables
+
+GRR-PSID_demo : Cleans demographic variables
+
+GRR-PSID_SES : Creates SES scale composed of income, wealth, and education
+
+At this stage, the final data set used for analyses is created
+
+________________________________________________________________________________
+
+GRR-SF : Creates results presented in published paper
